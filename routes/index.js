@@ -30,7 +30,7 @@ router.get("/match", async (ctx) => {
     const id = ctx.request.query.id;
     const server = ctx.request.query.server
       ? ctx.request.query.server.split(",")
-      : ["kugou", "kuwo", "migu", "bilibili", "pyncmd"];
+      : ["kugou", "kuwo", "migu", "bilibili", "pyncmd", "qq", "youtube"];
     console.log("开始匹配：" + id + " - " + server);
     if (!id) {
       ctx.body = { code: 400, message: "参数不完整" };
