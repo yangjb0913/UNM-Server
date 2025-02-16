@@ -26,7 +26,6 @@ router.get("/test", async (ctx) => {
 
 // 匹配
 router.get("/match", async (ctx) => {
-  ctx.header('Access-Control-Allow-Origin', '');
   try {
     const id = ctx.request.query.id;
     const server = ctx.request.query.server
