@@ -24,7 +24,6 @@ app.use(views(__dirname + "/public"));
 app.use(
   cors({
     origin: domain,
-    Access-Control-Allow-Origin: "*",
   })
 );
 
