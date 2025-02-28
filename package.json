@@ -4,10 +4,10 @@
   "description": "网易云解灰-API服务",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "npx nodemon index.js",
-    "prd": "pm2 start index.js",
-    "build": "node index.js"
+    "start": "ENABLE_FLAC=true node index.js",
+    "dev": "ENABLE_FLAC=true npx nodemon index.js",
+    "prd": "ENABLE_FLAC=true pm2 start index.js",
+    "build": "ENABLE_FLAC=true node index.js"
   },
   "author": "imsyy",
   "license": "MIT",
